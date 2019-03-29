@@ -1,0 +1,109 @@
+:root{
+  --grand-color: #27261f;
+  --greater-color: #433026;
+  --common-color: #5b5037;
+  --lesser-color: #987d48;
+  --backgroud-color: #c8ad7f;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  background: url('../images/locomotive-2821169_1920.jpg') no-repeat center center/cover;
+}
+a{
+  text-decoration: none;
+  color: var(--grand-color);
+  margin: 0 0.25rem;
+}
+a:hover{
+  font-style: italic;
+}
+#resume{
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: var(--backgroud-color);
+  border: 1px solid #987d48;
+  box-shadow: 5px 5px 10px 1px var(--grand-color);
+}
+.main-header{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1rem;
+}
+.heading,
+.objective{
+  grid-column: 1 / span 2;
+
+}
+.contact-info{
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}
+.heading h1{
+  font-size: 3rem;
+  text-align: center;
+  justify-items: center;
+}
+.objective p{
+  font-size: 1.25rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+.contact-info ul{
+  list-style: none;
+  text-align: end;
+  font-size: 1.125rem;
+}
+.line-break{
+  border-bottom: 2px solid var(--grand-color);
+}
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+#sidebar{
+  flex: 1;
+  margin-right: 2rem;
+}
+#sidebar .box-alt,
+#jobs .box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+#sidebar .box-alt h3{
+  font-size: 2rem;
+  text-align: center;
+  color: var(--grand-color);
+}
+#sidebar .box-alt ul{
+  list-style: none;
+  margin-left: 1rem;
+}
+#sidebar .box-alt ul li{
+  font-size:1.125rem;
+  text-align: center;
+  color: var(--greater-color);
+}
+#jobs{
+  flex: 3;
+}
+#jobs strong{
+  font-size: 2rem;
+}
+#jobs .box small{
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+#jobs .box ul{
+  padding: 0 2rem;
+}
+#jobs .box ul li{
+  font-size: 1.125rem;
+}

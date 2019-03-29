@@ -1,0 +1,13 @@
+.main-header{
+  display: flex;
+  flex-direction: column;
+}
+.main-header .contact-info ul{
+  text-align: center;
+}
+@media(max-width: 500px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
